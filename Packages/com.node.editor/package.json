@@ -1,6 +1,6 @@
 {
   "name": "com.node.editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Node Editor",
   "description": "A comprehensive tool for Unity developers, this node editor simplifies the creation of dialogues and quests. Design branching dialogues, conditional events, and quest chains with a visual node-based approach.",
   "unity": "2019.1",
