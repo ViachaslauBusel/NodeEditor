@@ -99,19 +99,6 @@ namespace NodeEditor
 
         private static GUIStyle CreateButtonStyle(string _normal, string _active = null)
         {
-            string folderPath = "Packages\\com.node.test\\Editor\\Img";
-            if (!AssetDatabase.IsValidFolder(folderPath))
-            {
-                Debug.LogError($"Folder not found: '{folderPath}'");
-                //return null;
-            }
-            //Выведи все ассеты из этой папки в консоль
-            string[] guids = AssetDatabase.FindAssets("t:Texture2D", new[] { "Packages/com.node.test/Editor/Img" });
-            foreach (string guid in guids)
-            {
-                string path = AssetDatabase.GUIDToAssetPath(guid);
-                Debug.Log(path);
-            }
             GUIStyle _style = new GUIStyle();
             if (_normal != null) _style.normal.background = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.node.editor/Editor/Img/" + _normal + ".png");// Resources.Load("Editor/"+_normal) as Texture2D;
             if (_active != null) _style.active.background = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.node.editor/Editor/Img/" + _active + ".png");// Resources.Load("Editor/"+_active) as Texture2D;
