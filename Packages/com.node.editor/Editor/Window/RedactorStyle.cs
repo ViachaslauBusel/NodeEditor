@@ -86,13 +86,13 @@ namespace NodeEditor
 
 
             InPoint= new GUIStyle();
-            InPoint.normal.background = EditorGUIUtility.Load("d_winbtn_mac_min@2x") as Texture2D;
-            InPoint.active.background = EditorGUIUtility.Load("d_winbtn_mac_min_a@2x") as Texture2D;
+            InPoint.normal.background = EditorGUIUtility.Load("radio") as Texture2D;
+            InPoint.active.background = EditorGUIUtility.Load("radio") as Texture2D;
             InPoint.border = new RectOffset(0, 0, 0, 0);
 
             OutPoint = new GUIStyle();
-            OutPoint.normal.background = EditorGUIUtility.Load("d_winbtn_mac_max@2x") as Texture2D;
-            OutPoint.active.background = EditorGUIUtility.Load("d_winbtn_mac_max_a@2x") as Texture2D;
+            OutPoint.normal.background = EditorGUIUtility.Load("radio") as Texture2D;
+            OutPoint.active.background = EditorGUIUtility.Load("radio") as Texture2D;
             OutPoint.border = new RectOffset(0, 0, 0, 0);
         }
 
